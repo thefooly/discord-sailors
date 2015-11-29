@@ -1,0 +1,24 @@
+{
+  "name": "discord-sailors",
+  "version": "1.0.0",
+  "description": "Discord bot for the mad sailors server",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=discord-sailors node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thefooly/discord-sailors.git"
+  },
+  "author": "Andrea Gallidabino <andrea.gallidabino@usi.ch>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thefooly/discord-sailors/issues"
+  },
+  "homepage": "https://github.com/thefooly/discord-sailors#readme",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "discord.js": "^5.0.1"
+  }
+}

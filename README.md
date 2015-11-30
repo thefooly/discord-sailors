@@ -7,12 +7,12 @@ A discord bot implementation created with [discord.js](https://github.com/hydrab
 
 ### Installation
 
-1. Download the discord-sailors folder.
-2. Run the following command:
+*	Download the discord-sailors folder.
+*	Run the following command:
 ```
 npm install
 ```
-3. Create a _config.js_ file in the root folder as follow:
+*	Create a _config.js_ file in the root folder as follow:
 ```
 module.exports = {
 	email: 'your email', // The email of the discord account the bot will use to connect
@@ -20,7 +20,7 @@ module.exports = {
 	plugins: {}
 }
 ```
-4. Run the following command:
+*	Run the following command:
 ```
 npm start
 ```

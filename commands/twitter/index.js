@@ -38,6 +38,8 @@ var help = function() {
 	return m
 }
 
+var following = {}
+
 var follow = function(bot, message, twitterUser) {
 	if(twitterUser) {
 		bot.reply(message, "Not yet implemented");

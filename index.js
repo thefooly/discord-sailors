@@ -7,7 +7,7 @@ var bot = new Discord.Client();
 var userEmail = process.argv[2]
 var userPassword = process.argv[3]
 
-var applications = require('./applications');
+var applications = require('./commands');
 
 bot.on("message", function(message){
 		var m = message.content.split(' ')

@@ -5,7 +5,7 @@ var message = function(bot, message) {
 }
 
 var help = function() {
-	return "ping: risponde con pong"
+	return "ping:\t risponde con pong"
 }
 
 module.exports = {

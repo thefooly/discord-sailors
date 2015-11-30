@@ -1,5 +1,6 @@
 var debug = require("debug")('discord-sailors')
 var Discord = require("discord.js");
+var config = require('./config')
 
 var bot = new Discord.Client();
 
@@ -31,7 +32,7 @@ bot.on("message", function(message){
 		}
 });
 
-bot.login(userEmail, userPassword, function(err,token) {
+bot.login(config.email, config.password, function(err,token) {
 	if(err) {
 		debug('Login failed')
 	} else {
@@ -44,10 +45,10 @@ function stringStartsWith(string, prefix) {
 }
 
 function helpMessage(bot, message) {
-	var m = "Puoi utilizzare i seguenti comandi: \n\n"
-	m += "help: mostra la lista dei comandi\n"
+	var m = "\nPuoi utilizzare i seguenti comandi:\n"
+	m += "\t - help:\t mostra la lista dei comandi\n"
 	for(var i in applications) {
-		m += applications[i].help() + "\n"
+		m += "\t - " + applications[i].help() + "\n"
 	}
 	bot.reply(message, m);
 }

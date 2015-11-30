@@ -11,7 +11,7 @@ var message = function(bot, message) {
 }
 
 var help = function() {
-	return "team x: crea 'x' team con le persone presenti online"
+	return "team x:\t crea 'x' team con le persone presenti online"
 }
 
 var createTeams = function(bot, number) {

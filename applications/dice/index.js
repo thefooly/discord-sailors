@@ -17,7 +17,7 @@ var message = function(bot, message) {
 }
 
 var help = function() {
-	return "dice xdy: lancia un dado con 'x' facce 'y' volte"
+	return "dice xdy:\t lancia un dado con 'x' facce 'y' volte"
 }
 
 var diceThrow = function(number, size) {

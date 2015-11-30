@@ -27,6 +27,15 @@ npm start
 
 ---
 
+### Current commands
+
+*	Ping
+*	Team
+* Twitter
+* Dice
+
+---
+
 ### Adding commands
 
 We made the Sailors bot easily extensible. In order to add a new command you need to:

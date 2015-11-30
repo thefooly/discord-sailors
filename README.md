@@ -48,10 +48,10 @@ We made the Sailors bot easily extensible. In order to add a new command you nee
 4. If the new command needs any configuration, you should defined the config into the _config.js_ file in the root folder under the plugins attributes. Example with the _twitter_ command:
 	plugins: {
 		twitter: {
-			consumer_key: 'wVn3O5lqSGz89x259pkmO1ymj',
-			consumer_secret: 'ZCmUsrGrjgKZvImDqKl8Om4FAMFRgn9ZjptYHNGfjwQsGX2dz9',
-		  access_token_key: '707246287-mrRScO8x46VuS1pAsMOqTNlzSd3usWecJDbPLFDy',
-		  access_token_secret: 'nyDzIqtDcGZvqOerzdYm338WvnNmZMyYzVPbe15gIW6RO'
+			consumer_key: '123',
+			consumer_secret: '123',
+			access_token_key: '123',
+			access_token_secret: '123'
 		}
 	}
 5. Have fun!

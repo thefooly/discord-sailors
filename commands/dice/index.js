@@ -3,15 +3,10 @@ var debug = require("debug")('discord-sailors')
 var message = function(bot, message) {
   var s = message.content.split(' ')
 
-  if(s.length != 3) {
+  if(s.length != 4) {
   	bot.reply(message, "Invalid input");
   } else {
-  	var dice = s[2].split('d')
-
-  	if(dice.length != 2) {
-  		bot.reply(message, "Invalid input");
-  	} else {
-  		bot.reply(message, '[' + diceThrow(dice[0], dice[1]) + ']')
+  		bot.reply(message, '[' + diceThrow(s[2], s[3]) + ']')
   	}
   }
 }
@@ -21,15 +16,19 @@ var help = function() {
 }
 
 var diceThrow = function(number, size) {
-	var a = []
+  if(number < 0 || size < 0) {
+    return "Invalid Input"
+  } else {
+      var a = []
 
-	if(number < 0 || size < 0) 
-		return ''
+    if(number < 0 || size < 0) 
+      return ''
 
-	for(var i = 0; i < number; i++) {
-		a.push(Math.floor((Math.random() * size) + 1))
-	}
-	return a.join(', ')
+    for(var i = 0; i < number; i++) {
+      a.push(Math.floor((Math.random() * size) + 1))
+    }
+    return a.join(', ')
+  } 
 }
 
 module.exports = {

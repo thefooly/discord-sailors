@@ -53,7 +53,7 @@ var help = function() {
 	m += "\t\t -- twitter untrack x:\tuntracks the tweets stream containting the word 'x'\n"
 	m += "\t\t -- twitter last x:\tpost the last tweet of 'x'\n"
 	m += "\t\t -- twitter post x:\tpost the last tweet containing 'x'\n"
-	m += "\t\t -- twitter followlist:\treturns the list of followed users"
+	// m += "\t\t -- twitter followlist:\treturns the list of followed users"
 	m += "\t\t -- twitter tracklist:\treturns the list of tracked words"
 
 	return m

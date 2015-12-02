@@ -33,6 +33,7 @@ npm start
 *	Team
 * Twitter
 * Dice
+* Tumblr
 
 ---
 

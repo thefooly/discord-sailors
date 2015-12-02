@@ -12,10 +12,12 @@ var clientTumblr = tumblr.createClient({
 
 var message = function(bot, message) {
   var s = message.content.split(' ')
+  var req =  s.splice(3, s.length-1)
+  console.log(req)
 
   switch(s[2]) {
   	case 'post':
-  		post(bot, message, s[3])
+  		post(bot, message, req)
   		break;
   	default:
   		bot.reply(message, "Invalid input");
@@ -24,11 +26,13 @@ var message = function(bot, message) {
 }
 
 var post = function(bot, message, word) {
-	if(word) {
+	var search = word.join(' ')
+
+	if(search) {
 		var params = {
 			limit: 1
 		}
-		clientTumblr.tagged(word, params, function (err, data) {
+		clientTumblr.tagged(search, params, function (err, data) {
     	if(data.length > 0) {
     		bot.reply(message, data[0].post_url);
     	} else {

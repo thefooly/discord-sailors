@@ -13,7 +13,6 @@ var clientTumblr = tumblr.createClient({
 var message = function(bot, message) {
   var s = message.content.split(' ')
   var req =  s.splice(3, s.length-1)
-  console.log(req)
 
   switch(s[2]) {
   	case 'post':
